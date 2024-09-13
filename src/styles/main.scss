@@ -1,0 +1,36 @@
+@use 'box.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( #8400ff, #7b07c9, #5b0396);
+}
+
+input {
+    height: 40px;
+    width: 150px;
+    padding-left: 10px;
+    font-size: 15px;
+    
+    &:hover{
+        border: 1px solid #9649dd;
+    }
+
+    &:focus{
+        outline: none;
+        border: 1px solid #8400ff;
+    }
+}
+
+.input-uf{
+    width: 240px;
+}
