@@ -19,7 +19,7 @@ document.querySelector('.box__form__cep__button').addEventListener('click', func
             inputCidade.value = json.localidade;
             inputEstado.value = json.uf;
         })
-        .catch(function (err) {
-            console.error('Erro ao buscar CEP:', err);
+        .catch(function (erro) {
+            alert('Erro ao buscar CEP:', erro);
         });
 });
